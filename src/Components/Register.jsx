@@ -3,7 +3,7 @@ import React from 'react'
 function Register() {
     return (
         <div className='w-screen h-[100vh] bg-[rgb(1,22,61)] relative'>
-            <form className='w-[40%] border-3 p-4 absolute top-[8%] left-[30%]'>
+            <form className='w-[40%]  border-3 p-4 absolute top-[8%] left-[30%]'>
                 <h1 className='text-3xl text-white text-center font-Poetsen my-2'>Register</h1>
                 <div className="form-group mb-3">
                     <label htmlFor="username" className='text-lg text-white text-center font-Josefin '>Username</label>
