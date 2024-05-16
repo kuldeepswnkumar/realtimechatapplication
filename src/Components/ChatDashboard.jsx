@@ -67,7 +67,7 @@ function ChatDashboard() {
                         </div>
                         <div className="usename m-2 w-full">
                             <h3 className='mb-1'>Kuldee Kumar Gupta</h3>
-                            <p className='text-gray-600'>Hello Kuldeep <FontAwesomeIcon icon={faCheckDouble} className='text-gray-500 float-right' /></p>
+                            <p className='text-gray-600'>My Message <FontAwesomeIcon icon={faCheckDouble} className='text-gray-500 float-right' /></p>
                         </div>
                     </div>
                 </div>
