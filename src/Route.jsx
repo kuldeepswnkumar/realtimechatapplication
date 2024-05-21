@@ -6,9 +6,13 @@ import {
 
 import Register from "./Components/Register.jsx";
 import UserLogin from "./Components/UserLogin.jsx";
-import ChatDashboard from "./Components/ChatDashboard.jsx";
-import UserProfile from "./Components/Sidebar/UserProfile.jsx";
-import Bot from "./Components/Sidebar/Bot.jsx";
+import ChatDashboard from './Components/ChatDashboard.jsx'
+import UserProfile from "./Components/UserProfile.jsx";
+import AiBot from "./Components/Sidebar/AiBot.jsx";
+import Layout from "./Layout.jsx";
+import DeleteUser from "./Components/Sidebar/DeleteUser.jsx";
+import UserLogout from "./Components/UserLogout.jsx";
+
 
 const router = createBrowserRouter([
     {
@@ -22,26 +26,36 @@ const router = createBrowserRouter([
         ]
     },
     {
-        path: "/login",
-        element: <UserLogin />
-    },
-    {
         path: "/register",
         element: <Register />
     },
     {
-        path: "/chatdashboard",
-        element: <ChatDashboard />
+        path: '/deleteuser/:id',
+        element: <DeleteUser />
     },
     {
-        path: "/profile",
-        element: <UserProfile />
+        path: '/logout',
+        element: <UserLogout />
     },
     {
-        path: "/bot",
-        element: <Bot />
-    },
+        path: "/chatDashboard",
+        element: <Layout />,
+        children: [
+            {
+                path: '/chatDashboard',
+                element: <ChatDashboard />
+            },
+            {
+                path: '/chatDashboard/bot',
+                element: <AiBot />
+            },
+            {
+                path: '/chatDashboard/profile',
+                element: <UserProfile />
+            },
 
+        ]
+    }
 
 ]);
 

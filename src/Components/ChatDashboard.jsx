@@ -1,12 +1,18 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUser, faCommentDots, faRobot, faSearch, faCheckDouble, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react'
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faUser, faCommentDots, faRobot, faSearch, faCheckDouble, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { Link, useNavigate } from 'react-router-dom'
 
 function ChatDashboard() {
+
+
+
     return (
         <div className='flex w-[100wh] h-[100vh]'>
-            <div className="w-1/6 rounded-2xl bg-[rgb(1,22,61)] border-3 border-black m-2">
+
+
+
+            {/* <div className="w-1/6 rounded-2xl bg-[rgb(1,22,61)] border-3 border-black m-2">
                 <div className="logo w-16 m-auto mt-3">
                     <img src="../../img/chat_logo-f.png" alt="img" />
                 </div>
@@ -16,18 +22,18 @@ function ChatDashboard() {
                         <FontAwesomeIcon icon={faCommentDots} className='text-white text-6xl my-1' />
                         <p className='text-white m-auto mb-3'>Message</p>
                     </Link>
-                    <Link to='/profile'>
+                    <Link to='/chatDashboard/profile'>
                         <FontAwesomeIcon icon={faUser} className='text-white text-6xl my-1' />
-                        <p className='text-white mx-1 mb-3'>Profile   </p>
+                        <p className='text-white mx-1 mb-3'>Profile </p>
                     </Link>
-                    <Link to='/bot'>
+                    <Link to='/chatDashboard/bot'>
                         <FontAwesomeIcon icon={faRobot} className='text-white text-5xl my-1' />
                         <p className='text-white mx-3'>Bot</p>
                     </Link>
 
                 </div>
-            </div>
-            <div className="w-2/6 rounded-2xl bg-white m-1 border-3 border-gray-600">
+            </div> */}
+            {/* <div className="w-2/6 rounded-2xl bg-white m-1 border-3 border-gray-600">
                 <div className="heading-text m-4 text-4xl text-blue-500 font-bold">
                     <h1>Message</h1>
                 </div>
@@ -71,20 +77,20 @@ function ChatDashboard() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="w-5/6 rounded-2xl bg-gray-800 m-1 relative">
-                <div className="para absolute top-[80%] ml-3">
+            </div> */}
+            {/* <div className="w-2/6 rounded-2xl bg-gray-800 m-1 relative w-full"> */}
+            {/* <div className="para absolute top-[80%] ml-3">
                     <p className='text-white border-2 p-2 w-44 rounded-lg'>Hi!</p>
-                </div>
-                <div className="sub-msg absolute top-[90%] ml-3 w-full">
+                </div> */}
+            {/* <div className="sub-msg absolute top-[90%] ml-3 w-full">
                     <div className="message ">
                         <input type="text" className='w-[92%] h-[6vh] rounded-full p-3' placeholder='Message here...' />
                         <button className='btn btn-success m-2 w-11 h-11 rounded-full'>
                             <FontAwesomeIcon icon={faPaperPlane} className='' />
                         </button>
                     </div>
-                </div>
-            </div>
+                </div> */}
+            {/* </div> */}
         </div>
     )
 }
