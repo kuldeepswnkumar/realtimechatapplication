@@ -43,7 +43,7 @@ function Updateuser() {
                         </div>
                     </div>
                     <div className="form-group mb-3">
-                        <label htmlFor="email" className='text-lg text-white text-center font-Josefin '>Email Id</label>
+                        <label htmlFor="email" className='text-lg text-white text-center font-Josefin '>Email</label>
                         <input type="email" name='email' onChange={handleOnChage} className="form-control" placeholder="Enter Email Id" />
 
                     </div>
