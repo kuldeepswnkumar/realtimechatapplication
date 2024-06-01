@@ -1,4 +1,4 @@
-import { faRobot, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faCommentDots, faRobot, faUser } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
@@ -22,6 +22,15 @@ function Sidebar() {
                     >
                         <FontAwesomeIcon icon={faUser} className='text-white text-6xl my-1' />
                     </NavLink></li>
+
+                    <li className='my-6 font-Poppins hover:underline text-white'> <NavLink
+                        to="/chatdashboard"
+                        className={({ isActive, isPending }) =>
+                            isPending ? "pending" : isActive ? "active" : ""
+                        }
+                    >
+                        <FontAwesomeIcon icon={faCommentDots} className='text-white text-6xl my-1' />
+                    </NavLink></li>
                     <li className='my-6 font-Poppins hover:underline text-white'> <NavLink
                         to="/chatDashboard/bot"
                         className={({ isActive, isPending }) =>
@@ -30,10 +39,7 @@ function Sidebar() {
                     >
                         <FontAwesomeIcon icon={faRobot} className='text-white text-6xl my-1' />
                     </NavLink></li>
-
-
                 </ul>
-
             </div>
         </div>
     )

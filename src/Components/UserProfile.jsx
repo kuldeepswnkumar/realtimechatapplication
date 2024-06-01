@@ -24,6 +24,9 @@ function UserProfile() {
 
     return (
         <div>
+            <Link to='/logout'>
+                <button className='btn btn-success float-right m-3'>Logout</button>
+            </Link>
             <table className="table  table-striped">
                 <thead>
                     <tr>
@@ -49,9 +52,6 @@ function UserProfile() {
                                     <td>{curr.gender}</td>
                                     <td>
                                         <Link to={`/deleteuser/` + curr._id}>
-                                            <button className='btn btn-danger'>Delete</button>
-                                        </Link>
-                                        <Link to={`/updateuser/` + curr._id}>
                                             <button className='btn btn-danger'>Delete</button>
                                         </Link>
                                     </td>
